@@ -1,0 +1,33 @@
+## 📘 My Personal Notes
+
+### 🗓️ Week 1: Introduction to Database (DB)
+
+#### 📍 Definition and Purpose of Database
+-struktur koleksi data, modern db sysytem handle stuktur and non struktur data.
+major purpose of database system: 'datamodels a conceptual framework Datamodels 
+that determines the structure organisation,Data abstract hide the complexity of
+data structures to represent data in data base. 
+
+#### 📍 View of Data
+-  A major purpose of a database system is to provide users with an abstract view of the data.
+- Data models
+• A conceptual framework that determines the structure, organization, and the flow of data in a system. It serves as a blueprint for designing databases.
+- Data abstraction
+• Hide the complexity of data structures to represent data in the database from users through several levels of data abstraction.
+Ste is samosit
+
+
+#### 📍 DB Languages, Design, Architecture, and Users and Administrator
+- Logical design bantu mendefinifiskan fitur dan fungsi dari system dan 
+memerjelas relatinnship among the compoment,Pisikal design infromasi system membantu 
+mendefinisikan ccara gimana aksi di eksekusi
+Purpos of dbms
+1.	Data redundanacy information could be duplicated 
+2.	 Inconsistency:  duplicated data could be incooonitent
+3.	Diffituclty f in accesingg daa lacking o standaruirse query tools
+4. feed for new programs every distinct operation required a seperate.
+5.	data isolation data scated accr different files
+Komposisi ddbms
+Kumpulan data data yang berelasi dengan yang lain
+Program apa yyangg diggunakan untuk menjalankan datannya
+Characteritik nya data yang penting 
