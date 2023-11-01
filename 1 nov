@@ -1,0 +1,52 @@
+* Overlapping
+- ﻿﻿an instance of the higher-level entity set can belong to multiple lower-level entity sets at the same time.
+* ﻿﻿Disjoint
+- ﻿﻿an instance of the higher-level entity set can belong to only one lower-level entity set
+
+REPRESENTING SPECIALIZATION
+AS SCHEMAS (CONT.)
+* ﻿﻿Method 1:
+* ﻿﻿Form a schema for the higher-level entity
+* ﻿﻿Form a schema for each lower-level entity set, include primary key of higher-level entity set and local attributes
+* 
+schema	attributes
+person	ID, name, street, city
+student	ID, tot_cred
+employee	ID, salary
+* 
+• Drawback: getting information about an employee requires accessing two relations, the one corresponding to the low-level schema and the one corresponding to the high-level schema
+* 
+* A bottom-up design process - combine a number of entity sets that share the same features into a higher-level entity set.
+* ﻿﻿Specialization and generalization are simple inversions of each other; they are represented in an E-R diagram in the same way.
+* ﻿﻿The terms specialization and generalization are used interchangeably.
+
+Data Redundancy occurs when the same piece of data is stored in multiple places within a database.
+Types of Redundancy:
+Why Redundancy is a
+• Attribute Redundancy:
+Concern:
+- Duplicate attributes across
+• Data Inconsistency: Risk of
+different tables.
+data being updated in one
+• Example: Student names stored in both 'Student Data'
+place but not the other.
+and 'Grades' tables.
+• Storage Wastage:
+• Row Redundancy:
+Unnecessary use of
+- Identical or highly similar
+storage space.
+rows within a single table.
+• Example: Two identical entries for a student.
+
+Relationships
+* ﻿﻿Enrolls: A many-to-many relationship between Student and Course.
+* ﻿﻿Offers: A one-to-many relationship between Department and Course.
+* ﻿﻿Belongs to: A many-to-one relationship between Student and Department.
+Creating Aggregation
+• Resolve the redundancy with aggregation.
+• Create a new entity, say Enrollment, which aggregates the relationship between Student and Course.
+• Then establish a relationship between Enrollment and Department through the
+"Offered by" relationship.
+This structure removes the redundancy by ensuring that the department information is only directly associated with the course enrollment, thereby avoiding inconsistencies and simplifying maintenance.
