@@ -81,3 +81,11 @@ A is functionally depends on X.
 X+ Y
 
 A is partially depends on (X+Y).
+• In table below, attribute emp id is the primary key and will be unique for every row, hence we can use emp_id to fetch any row of data from this table.
+• Therefor attribute empName, reg_ date, branch and empAddress is functional dependent on attribute emp_id.
+For a simple table like EMPLOYEE SALES, a single column like empD can uniquely identify all the records in a table.
+But this is not true all the time. So now let's extend our example to see if more than 1 column together can act as a primary key (composite key).
+COMPOSITE KEY = two different attribute work together as a PRIMARY KEY
+roductName
+castPrice Perl mit
+transactionDate prymentlype SupplieriD SupplierName
