@@ -89,3 +89,10 @@ COMPOSITE KEY = two different attribute work together as a PRIMARY KEY
 roductName
 castPrice Perl mit
 transactionDate prymentlype SupplieriD SupplierName
+• In this case, primary key is a composite key.
+• Which is combination of (emplD) + (productiD)
+• transactionDate and paymentType is functionally depends on primary key X+Y
+• (empiD+productiD)
+• But... attributes productName, costPricePerUnit. supplierlD and supplierName only depends on Y(productID) only.
+• YproductID) is just a part of primary key X+Y (emplD+productID), therefore we call this situation partial dependency.
+• We want to eliminate partial dependency in 2NF.
