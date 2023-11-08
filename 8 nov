@@ -1,0 +1,83 @@
+The method for designing a relational database is to use a process commonly known as normalization. The goal is to generate a set of relation schemas that allows us to store information without unnecessary redundancy, yet also allows us to retrieve information easily.
+The approach is:
+1. Decide if a given relation schema is in 'good form."
+2. If a given relation schema is not in "good form," then we decompose it into a number of smaller relation schemas, each of which is in an appropriate normal form.
+To determine whether a relation schema is in one of the desiral normal forms, we need additional information about the real-world enterprise that we are modeling with the database. The most common approach is to use functional dependencies.
+These anomalies naturally occur and result in data that does not match the real-world the database purports to represent. Anomalies are caused when there is too much redundancy in the database's information.
+Anomalies can often be caused when the tables that make up the database suffer from poor construction.
+There are three kind of anomalies:
+- Insert Anomaly
+• Delete Anomaly
+Update Anomaly
+Insert Anomalies
+Occurs when certain attributes cannot be inserted into the database without the presence of other attributes.
+Ex: we can't add a new course unless we have at least one student enrolled on the course (this is the converse of delete anomaly).
+Insert Anomalies
+
+empiD productio
+product.Name
+E001 POOL, PO02
+Widget Procio; Gadget
+Maxs
+E002 PooL, Poog Widget Pros20; Gine
+Ultimate:.10
+E003
+Peez. Pooy Gadget Masciss
+Thingamajig Elite:s
+E004 Poo3, Poos Giamo Libimate.S.
+Whatchamacalit Pro:12
+costPrice Perlinit
+transactionDate paymentlype
+Credit, 30
+8500, (375. 350)
+2021-07-01
+$1000, Eb50
+3 Maret 2021
+Card, (Transter,
+Cygo, 500 EUR
+2021-07-05
+Debit. [Credit
+Voucher)
+(1300 USD, 800
+CAD!
+og Mar'as
+Cash, (Card Debit]
+Suppliers Suppliers
+SooL
+S002
+So01,
+S003
+S002
+So04
+S003
+S005
+XYZ Industries, ABC
+Supplies
+ABC Supplies, DEF
+Corp
+XYZ Industries, GHI
+Manufacturing
+DEF Corp., JKL
+Products
+Un-
+Normalized
+
+These anomalies naturally occur and result in data that does not match the real-world the database purports to represent. Anomalies are caused when there is too much redundancy in the database's information.
+Anomalies can often be caused when the tables that make up the database suffer from poor construction.
+There are three kind of anomalies:
+- Insert Anomaly
+- Delete Anomaly
+- Update Anomaly
+
+For a table to be in the Second Normal Form:
+Rule 1:
+It should be in the First Normal Form.
+Rule 2:
+It should not have Partial Dependency.
+Before we start, let's find out what is Partial Dependency.
+X
+
+A is functionally depends on X.
+X+ Y
+
+A is partially depends on (X+Y).
